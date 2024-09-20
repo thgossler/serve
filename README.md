@@ -43,6 +43,15 @@ serve [<rootFolder>] [--port:<number>] [--https] [--exitTimeoutSecs:<seconds>]
     --exitTimeoutSecs  Timeout in seconds to wait for requests before exiting (default: 300)
 ```
 
+Example:
+
+```shell
+serve --port:3000 --https
+```
+
+This will check the availability of the self-signed server certificate, eventually create and install it, and
+then serve the contents of the current directory under `https://localhost:3000/`.
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
